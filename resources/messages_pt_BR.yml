@@ -1,0 +1,176 @@
+
+#========================================================================
+# PurePerms by 64FF00 (xktiverz@gmail.com, @64ff00 for Twitter)
+#========================================================================
+# Versão Pt_br traduzida por: Kainan 
+#
+# Twitter: @na18_k
+# GitHub: Na18k
+#========================================================================
+
+---
+messages-version: "0.1.0_00"
+language: "pt"
+cmds:
+  addgroup:
+    desc: "Adiciona um novo grupo à lista de grupos."
+    usage: "Use: /addgroup <group>"
+    messages:
+      group_added_successfully: "Adicionado %var0% à lista de grupos com sucesso."
+      group_already_exists: "O grupo %var0% já existe."
+      invalid_group_name: "Nome de grupo inválido."
+  addparent:
+    desc: "Adiciona um grupo à herança de outro grupo."
+    usage: "Use: /addparent <target_group> <parent_group>"
+    messages:
+      addparent_successfully: "Adicionado %var0% na herança %var1% com sucesso."	 
+      target_already_inherits: "O grupo %var0% já é herdeiro de %var1%."     
+  defgroup:
+    desc: "Permite que você defina o grupo padrão."
+    usage: "Use: /defgroup <group> [world]"
+    messages:
+      defgroup_successfully: "O grupo Default foi definido com sucesso para %var0%."
+      group_not_exist: "Grupo %var0% não existe."
+      level_not_exist: "Este mundo %var0% não existe."
+  fperms:
+    desc: "Mostra uma lista de todas as permissões para um plugin específico."
+    usage: "Use: /fperms <plugin>"
+    messages:
+      no_plugin_perms: "Plugin %var0% não possui nenhuma permissão"
+      plugin_not_exist: "Plugin %var0% não existe."
+      plugin_perms_list: "Lista de todas as permissões do plug-in %var0% (%var1% / %var2%) : "
+  groups:
+    desc: "Mostra uma lista de todos os grupos."
+    messages:
+      all_registered_groups: "Todos os grupos registrados: %var0%"
+  grpinfo:
+    desc: "Mostra informações sobre um grupo."
+    usage: "Use: /grpinfo <group> [world]"
+    messages:
+      group_not_exist: "O grupo %var0% não existe."
+      grpinfo_header: "-- Informação do Grupo %var0% --" 
+      grpinfo_alias: "APELIDO: %var0%"
+      grpinfo_default: "PADRÃO: %var0%" 
+      grpinfo_parents: "PARENTES: %var0%"	  
+      level_not_exist: "O mundo %var0% não existe."
+  listgperms: 
+    desc: "Mostra uma lista de todas as permissões de um grupo."
+    usage: "Use: /listgperms <group> <page> [world]"
+    messages:
+      group_not_exist: "O grupo %var0% não existe."
+      group_perms_list: "Lista de todas as permissões do grupo %var0% (%var1% / %var2%) : "
+      level_not_exist: "O mundo %var0% não existe."
+      no_group_perms: "O grupo %var0% não possui nenhuma permissão."
+  listuperms: 
+    desc: "Mostra uma lista de todas as permissões de um usuário."
+    usage: "Use: /listuperms <player> <page> [world]"
+    messages:
+      level_not_exist: "O mundo %var0% não existe."
+      no_user_perms: "O player %var0% não possui nenhuma permissão."
+      user_perms_list: "Lista de todas as permissões do usuário %var0% (%var1% / %var2%) : " 
+  ppinfo: 
+    desc: "Mostra informações atuais do PurePerms, incluindo autor, versão e etc..."
+    messages:
+      ppinfo_console: "Você está usando PurePerms v%var0% by %var1%."
+      ppinfo_player: "Este servidor está usando PurePerms v%var0% by %var1%."
+  ppreload: 
+    desc: "Recarregar todas as configurações PurePerms."
+    messages: 
+      successfully_reloaded: "Todas as configurações do plugin foram recarregadas com sucesso."
+  ppsudo:
+    desc: "Registrar ou fazer login em sua conta Noeul."
+    usage: "Use: /ppsudo <login / register>"
+    messages:
+      already_registered: "Esta conta já está registrada."
+      deauth_01: "Este servidor usa Noeul v%var0% para proteger sua conta.."
+      deauth_02: "Você deve autenticar sua conta primeiro."
+      deauth_03: "Por favor, registre-se ou faça login em sua conta usando o comando /ppsudo"
+      invalid_sender: "Este comando deve ser usado apenas no jogo."
+      login_usage: "Use: /ppsudo login <password>"
+      not_registered: "Esta conta não está registrada."
+      password_too_short: "Sua senha NÃO cumpre o requisitos mínimos, (%var0%) requeridos."
+      register_usage: "Use: /ppsudo register <password>"
+      successfully_logged_in: "Agora você está logado."	 
+      successfully_registered: "Sua conta foi registrada com sucesso."
+      unregister_usage: "Use: /ppsudo unregister <password>" 	
+  rmgroup: 
+    desc: "Remove um grupo da lista de grupos."
+    usage: "Use: /rmgroup <group>"
+    messages:
+      group_removed_successfully: "Removido %var0% da lista de grupos com sucesso."
+      group_not_exist: "O grupo %var0% não existe."
+      invalid_group_name: "Nome de grupo inválido."
+  rmparent:
+    desc: "Remove um grupo de outra lista de herança de outro grupo."
+    usage: "Use: /rmparent <target_group> <parent_group>"
+    messages:
+      rmparent_successfully: "Removido %var0% da herança de %var1% com sucesso."		  
+  setgperm: 
+    desc: "Adiciona uma permissão ao grupo."
+    usage: "Use: /setgperm <group> <permission> [world]"
+    messages:
+      gperm_added_successfully: "Adicionada permissão %var0% ao grupo com sucesso."
+      group_not_exist: "O grupo %var0% não existe."
+      level_not_exist: "O mundo %var0% não existe."
+  setgroup: 
+    desc: "Define o grupo para o usuário."
+    usage: "Use: /setgroup <player> <group> <exp_time> [world]"
+    messages:
+      access_denied_01: "Você não tem permissão para definir o grupo de um jogador para %var0%."
+      access_denied_02: "Você não tem permissão para alterar o grupo de um jogador com o grupo %var0%."    
+      group_not_exist: "O grupo %var0% não existe."
+      level_not_exist: "O mundo %var0% não existe."
+      on_player_group_change: "Seu grupo foi alterado para um/uma %var0%!"
+      setgroup_successfully: "Adicionado %var0% para o grupo com sucesso."
+  setuperm: 
+    desc: "Adiciona uma permissão ao usuário."
+    usage: "Use: /setuperm <player> <permission> [world]"
+    messages:
+      level_not_exist: "O mundo %var0% não existe."
+      uperm_added_successfully: "Adicionada permiçao %var0% à %var1% com sucesso."
+  unsetgperm: 
+    desc: "Remove uma permissão do grupo."
+    usage: "Use: /unsetgperm <group> <permission> [world]"
+    messages:
+      gperm_removed_successfully: "Removida permição %var0% do grupo com sucesso."
+      group_not_exist: "O grupo %var0% não existe."
+      level_not_exist: "O mundo %var0% não existe."
+  unsetuperm: 
+    desc: "Remove uma permissão do usuário."
+    usage: "Use: /unsetuperm <player> <permission> [world]"
+    messages: 
+      level_not_exist: "O mundo %var0% não existe."
+      uperm_removed_successfully: "Permissão removida %var0% de %var1% com sucesso."
+  usrinfo: 
+    desc: "Mostra informações sobre um usuário."
+    usage: "Use: /usrinfo <player> [world]"
+    messages:
+      level_not_exist: "O mundo %var0% não existe."
+      status_online: "ONLINE!"
+      status_offline: "OFFLINE..."
+      usrinfo_header: "-- Informações do usuário %var0% --"
+      usrinfo_username: "NOME: %var0%"
+      usrinfo_status: "STATUS: %var0%"
+      usrinfo_ip: "IP: %var0%"
+      usrinfo_uuid: "ID: %var0%"
+      usrinfo_group: "GRUPO: %var0%"
+      usrinfo_exp: "ExpTime: %var0%"
+      unknown: "DESCONHECIDO"
+logger_messages:
+  getConfigValue_01: "Key %var0% não encontrada em config.yml."
+  getDefaultGroup_01: "Mais de um grupo padrão foi declarado no arquivo de grupos."
+  getDefaultGroup_02: "Nenhum grupo padrão foi encontrado no arquivo de grupos."
+  getDefaultGroup_03: "Configurado o grupo padrão automaticamente."
+  getGroup_01: "O grupo %var0% não encontrado."
+  getGroup_02: "O grupo %var0% tem dados inválidos ou corrompidos."
+  onLoad_01: "O suporte para vários mundos está desativado no momento."
+  onLoad_02: "Não se esqueça de definir a opção enable-multiworld-perms em config.yml como [true] se quiser usar permissões por mundo!"
+  onLoad_03: "Suporte multiworld ativado."
+  registerPlayer: "Registrando jogador %var0%..."
+  setProvider_MySQL: "Definir provedor de dados para MySQL."
+  setProvider_YAMLv1: "Definir provedor de dados para YAMLv1."
+  setProvider_YAMLv2: "Definir provedor de dados para YAMLv2."
+  setProvider_NotFound: "Fornecedor %var0% NÃO existe. Configure o provedor de dados para o padrão."
+  unregisterPlayer: "Cancelando o registro do jogador %var0%..."
+  YAMLProvider_InvalidGroupsSettings: "CONFIGURAÇÃO GROUPS.YML INVÁLIDA: Verifique se você possui um groups.yml inválido ou corrompido."
+...
