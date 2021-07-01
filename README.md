@@ -1,23 +1,24 @@
-# =========================================
-# Em desenvolvimento
-# =========================================
+# =====================
+# Em desenvolvimento a tradução
+# =====================
 
-# General
+# Geral
 
 PurePerms by 64FF00 is a permissions manager for PocketMine-MP. 
 
 It can be used in conjunction with PureChat to display players groups in chat.
-
-#Traduçao pt-BR
+=========================
+Traduçao pt-BR
 
 Tradução feita por Na18k
+=========================
 
-# Commands
+# Comandos
 
 Comando | Descrição | Permissão
 --- | --- | ---
 `/addgroup <group>` | Adiciona um novo grupo para a lista de grupos. | pperms.command.addgroup
-`/addparent <target_group> <parent_group>` | Adiciona um grupo a lista de herança de outro grupo. | pperms.command.addparent
+`/addparent <target_group> <parent_group>` | Adiciona um grupo à lista de herança de outro grupo. | pperms.command.addparent
 `/defgroup <group> [world]` | Permite que você defina um grupo padrão. | pperms.command.defgroup
 `/fperms` | Encontrar permissões de um puglin em especifico | pperms.command.fperms
 `/groups` | Mostra a lista de todos os grupos. | pperms.command.groups
@@ -26,17 +27,17 @@ Comando | Descrição | Permissão
 `/listuperms <player> <page> [world]` | Mostra todas as permissões de um usuário. | pperms.command.listuperms
 `/ppinfo` | Mostra informações sobre PurePerms. | pperms.command.ppinfo
 `/ppsudo <login / register>` | Registrar ou fazer login na sua conta Noeul. | pperms.command.ppsudo
-`/ppreload` | Reloads all PurePerms configurations. | pperms.command.ppreload
-`/rmgroup <group>` | Removes a group from the groups list. | pperms.command.rmgroup
-`/rmparent <target_group> <parent_group>` | Removes a group from another group inheritance list. | pperms.command.rmparent
-`/setgperm <group> <permission> [world]` | Adds a permission to the group. | pperms.command.setgperm
-`/setgroup <player> <group> [world]` | Sets group for the user. | pperms.command.setgroup
-`/setuperm <player> <permission> [world]` | Adds a permission to the user. | pperms.command.setuperm
-`/unsetgperm <group> <permission> [world]` | Removes a permission from the group. | pperms.command.unsetgperm
-`/unsetuperm <player> <permission> [world]` | Removes a permission from the user. | pperms.command.unsetuperm
-`/usrinfo <player> [world]` | Shows info about a user. | pperms.command.usrinfo
+`/ppreload` | Recarrega todas as configurações do PurePerms. | pperms.command.ppreload
+`/rmgroup <group>` | Remove um grupo da lista de grupos. | pperms.command.rmgroup
+`/rmparent <target_group> <parent_group>` | Remove um grupo da lista de herança de outro grupo. | pperms.command.rmparent
+`/setgperm <group> <permission> [world]` | Adiciona uma permissão à um grupo. | pperms.command.setgperm
+`/setgroup <player> <group> [world]` | Define um grupo para um usuário | pperms.command.setgroup
+`/setuperm <player> <permission> [world]` | Adiciona uma permissão a um usuário. | pperms.command.setuperm
+`/unsetgperm <group> <permission> [world]` | Remove uma permissão de um grupo. | pperms.command.unsetgperm
+`/unsetuperm <player> <permission> [world]` | Remove uma permissão de um usuário. | pperms.command.unsetuperm
+`/usrinfo <player> [world]` | Mostra informações de um usuário. | pperms.command.usrinfo
 
-# Config
+# Configurações
 
 ``` YAML
 
@@ -45,11 +46,11 @@ Comando | Descrição | Permissão
 # 제 블로그 이외에 허락없이 마음대로 플러그인 배포하실 시에는 바로 한국어 파일 삭제 조치하고 공유 중단합니다
 
 ---
-# Set default data provider for PurePerms
+# Definir o provedor de dados padrão do PurePerms
 # - mysql, yamlv1, yamlv2
 data-provider: yamlv1
 
-# Set the default language for PurePerms (<3)
+# Defina o idioma padrão do PurePerms (<3)
 # - en, ko, jp, ru, ua, it, sp, cz, sk, de, idn, tr, pt-BR
 # English message resource by @64FF00 and @Samueljh1 (GitHub)
 # Korean message resource by @64FF00 (GitHub)
@@ -64,35 +65,35 @@ data-provider: yamlv1
 # Indonesian message resource by @DevillordMCPE (GitHub)
 # Turkish messages resource by @PainTR (GitHub)
 # Portuguese messages resource by @Na18k (GitHub)
-default-language: en
+default-language: pt-BR
 
-# Disable /op permission for all players
+# Desativar a permissão /op para todos os players
 # - true / false
 disable-op: true
 
-# Setting this option will allow you to use per-world permissions
+# Essa opção permitirá que você use permissões por mundo
 # - true / false
 enable-multiworld-perms: false
 
-# Enables 'Noeul', a 'pointless' security management system for PurePerms
+# Habilita 'Noeul', um sistema de gerenciamento de segurança 'sem sentido' ao PurePerms
 # - true / false
 enable-noeul-sixtyfour: false
 
-# MySQL Settings (Only configure this if you are going to use MySQL data provider)
+# Configurações MySQL (Configure isso apenas se for usar um provedor de dados MySQL)
 mysql-settings:
   host: "PurePerms-FTW.loveyou.all"
   port: 3306
-  user: "YourUsernameGoesHere"
-  password: "YourPasswordGoesHere"
-  db: "YourDBNameGoesHere"
+  user: "SeuUsuarioVaiAqui"
+  password: "SuaSenhaVaiAqui"
+  db: "SeuNomeDeBancoDeDadosVaiAQui"
   
-# Sets a minimum length for a Noeul password when registering a new account
+# Define o comprimento mínimo para uma senha Noeul ao registrar uma nova conta
 # - int  
 noeul-minimum-pw-length: 6
   
-# Special thanks to @jazzwhistle for helping me with this cool feature! #JAZZWHISTLE-FTW
-# Ranks that can only be set on console
-# Also, users with a superadmin-rank can only have their rank changed on console
+# Agradecimentos especiais a @jazzwhistle por ter ajudado com esse recurso legal! #JAZZWHISTLE-FTW
+# Classificações que só podem ser definidas no console
+# Além disso, os usuários com uma classificação de superadministrador só podem ter sua classificação alterada no console 
 # - array
 superadmin-ranks: ["OP"]
 ```
@@ -115,11 +116,11 @@ Guest:
   worlds: []
 ```
 
-# Features
+# Características
 
-- Set up permissions for different groups!
-- Multi-group inheritance system to allow you to inherit group permissions
-- Multi-language support, just choose your favorite language in config.yml! (Currently supports Czech, English, German, Korean, Japanese, Russian, Italian, Indonesian, Slovak, Spanish, Turkish, and Ukrainian! :D)
-- Supports YAML + MySQL providers
-- Provides simple and flexible PurePerms API for plugin developers
-- And so on... ;)
+- Configure permissões para diferentes grupos!
+- Sistema de herança multi-grupo para permitir que você herde as permissões do grupo
+- Suporte Multi-linguagem, basta escolher seu idioma favorito em config.yml! (Suporta atualmente Czech, English, German, Korean, Japanese, Russian, Italian, Indonesian, Slovak, Spanish, Turkish, Ukrainian and Portuguese! :D)
+- Suporte a provedores YAML + MySQL
+- PurePerms fornece uma API simples e flexível para desenvolvedores de plug-ins
+- E muito mais... ;)
