@@ -10,48 +10,48 @@ author: "64FF00 & ProjectInfinity"
 website: https://github.com/PurePlugins/PurePerms
 permissions:
   pperms:
-    description: "PurePerms by 64FF00! (Twitter: @64FF00)"
+    description: "PurePerms por 64FF00! (Twitter: @64FF00)"
     children:
       pperms.command:
-        description: "Allows you to use all PurePerms commands."
+        description: "Permite que você use todos os comando do PurePerms."
         children:
           pperms.command.addgroup:
-            description: "Allows you to add a new group to the groups list."
+            description: "Adiciona um novo grupo para a lista de grupos."
           pperms.command.addparent:
-            description: "Allows you to add a group to another group inheritance list."	
+            description: "Adiciona um grupo à lista de herança de outro grupo."	
           pperms.command.defgroup:
-            description: "Allows you to set the default group manually."
+            description: "Permite que você defina um grupo padrão manualmente."
           pperms.command.fperms:
-            description: "Allows you to find permissions for a specific plugin."
+            description: "Encontrar permissões de um puglin em especifico."
           pperms.command.groups:
-            description: "Allows you to see a list of all groups."
+            description: "Mostra a lista de todos os grupos."
           pperms.command.listgperms:
-            description: "Allows you to see a list of all permissions from a group."
+            description: "Mostra todas as permissões de um grupo."
           pperms.command.listuperms:
-            description: "Allows you to see a list of all permissions from a user."
+            description: "Mostra todas as permissões de um usuário."
           pperms.command.ppinfo:
             default: true
-            description: "Allows you to get current PurePerms information."
+            description: "Mostra informações sobre PurePerms."
           pperms.command.ppreload:
-            description: "Allows you to reload all PurePerms configurations."
+            description: "Recarrega todas as configurações do PurePerms."
           pperms.command.rmgroup:
-            description: "Allows you to remove a group from the groups list."
+            description: "Remove um grupo da lista de grupos."
           pperms.command.rmparent:
-            description: "Allows you to remove a group from another group inheritance list."		
+            description: "Remove um grupo da lista de herança de outro grupo."		
           pperms.command.setgperm:
-            description: "Allows you to add a permission to the group."
+            description: "Adiciona uma permissão à um grupo."
           pperms.command.setgroup:
-            description: "Allows you to set group for a user."
+            description: "Define um grupo para um usuário"
           pperms.command.setuperm:
-            description: "Allows you to add a permission to a user."
+            description: "Adiciona uma permissão a um usuário."
           pperms.command.unsetgperm:
-            description: "Allows you to remove a permission from the group."
+            description: "Remove uma permissão de um grupo."
           pperms.command.unsetuperm:
-            description: "Allows you to remove a permission from the user."
+            description: "Remove uma permissão de um usuário."
           pperms.command.usrinfo:
-            description: "Allows you to see info about a user."
+            description: "Mostra informações de um usuário."
       pperms.noeul:
-        description: "Allows you to access all 'Noeul' related features."
+        description: "Permite que você acesse todos os recursos relacionados ao 'Noeul'."
         children:
           pperms.noeul.ppsudo:
-            description: "Allows you to use the Noeul 'ppsudo' command."
+            description: "Permite que você use o comando Noeul 'ppsudo'."
