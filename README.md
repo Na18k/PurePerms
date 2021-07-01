@@ -1,23 +1,31 @@
+# =========================================
+# Em desenvolvimento
+# =========================================
+
 # General
 
 PurePerms by 64FF00 is a permissions manager for PocketMine-MP. 
 
 It can be used in conjunction with PureChat to display players groups in chat.
 
+#Traduçao pt-BR
+
+Tradução feita por Na18k
+
 # Commands
 
-Command | Description | Permission
+Comando | Descrição | Permissão
 --- | --- | ---
-`/addgroup <group>` | Adds a new group to the groups list. | pperms.command.addgroup
-`/addparent <target_group> <parent_group>` | Adds a group to another group inheritance list. | pperms.command.addparent
-`/defgroup <group> [world]` | Allows you to set default group. | pperms.command.defgroup
-`/fperms` | Allows you to find permissions for a specific plugin. | pperms.command.fperms
-`/groups` | Shows a list of all groups. | pperms.command.groups
-`/grpinfo <group> [world]` | Shows info about a group. | pperms.command.grpinfo
-`/listgperms <group> <page> [world]` | Shows a list of all permissions from a group. | pperms.command.listgperms
-`/listuperms <player> <page> [world]` | Shows a list of all permissions from a user. | pperms.command.listuperms
-`/ppinfo` | Shows info about PurePerms. | pperms.command.ppinfo
-`/ppsudo <login / register>` | Registers or logs into your Noeul account. | pperms.command.ppsudo
+`/addgroup <group>` | Adiciona um novo grupo para a lista de grupos. | pperms.command.addgroup
+`/addparent <target_group> <parent_group>` | Adiciona um grupo a lista de herança de outro grupo. | pperms.command.addparent
+`/defgroup <group> [world]` | Permite que você defina um grupo padrão. | pperms.command.defgroup
+`/fperms` | Encontrar permissões de um puglin em especifico | pperms.command.fperms
+`/groups` | Mostra a lista de todos os grupos. | pperms.command.groups
+`/grpinfo <group> [world]` | Mostra informações sobre um grupo. | pperms.command.grpinfo
+`/listgperms <group> <page> [world]` | Mostra todas as permissões de um grupo. | pperms.command.listgperms
+`/listuperms <player> <page> [world]` | Mostra todas as permissões de um usuário. | pperms.command.listuperms
+`/ppinfo` | Mostra informações sobre PurePerms. | pperms.command.ppinfo
+`/ppsudo <login / register>` | Registrar ou fazer login na sua conta Noeul. | pperms.command.ppsudo
 `/ppreload` | Reloads all PurePerms configurations. | pperms.command.ppreload
 `/rmgroup <group>` | Removes a group from the groups list. | pperms.command.rmgroup
 `/rmparent <target_group> <parent_group>` | Removes a group from another group inheritance list. | pperms.command.rmparent
@@ -42,7 +50,7 @@ Command | Description | Permission
 data-provider: yamlv1
 
 # Set the default language for PurePerms (<3)
-# - en, ko, jp, ru, ua, it, sp, cz, sk, de, idn, tr
+# - en, ko, jp, ru, ua, it, sp, cz, sk, de, idn, tr, pt-BR
 # English message resource by @64FF00 and @Samueljh1 (GitHub)
 # Korean message resource by @64FF00 (GitHub)
 # Japanese message resource by @onebone and @haniokasai (GitHub)
@@ -55,6 +63,7 @@ data-provider: yamlv1
 # German message resource by @Exxarion (GitHub)
 # Indonesian message resource by @DevillordMCPE (GitHub)
 # Turkish messages resource by @PainTR (GitHub)
+# Portuguese messages resource by @Na18k (GitHub)
 default-language: en
 
 # Disable /op permission for all players
